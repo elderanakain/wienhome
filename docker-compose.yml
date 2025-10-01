@@ -8,5 +8,8 @@ services:
       - /run/dbus:/run/dbus:ro
     environment:
       - TZ=Europe/Vienna
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
     restart: unless-stopped
     network_mode: host
