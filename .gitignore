@@ -1,0 +1,34 @@
+# Ignore secrets and authentication files
+secrets.yaml
+.auth*
+.cloud/
+.google.token
+.google_credentials.json
+.ios.conf
+
+# Ignore database and logs
+home-assistant_v2.db*
+*.db-shm
+*.db-wal
+*.log
+*.log.*
+
+# Ignore backups and temporary files
+backup/
+*.bak
+*.swp
+*.tmp
+*.pid
+
+# Ignore hidden folders used by integrations
+.storage/
+custom_components/.translations/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore configuration test artifacts
+.tmp/
